@@ -1,6 +1,4 @@
-# LN Sport Update Application
-
-[![Netlify Status](https://api.netlify.com/api/v1/badges/e8e9c7dd-722e-4b61-b388-f4c296de9bb6/deploy-status)](https://app.netlify.com/sites/ln-foot/deploys)
+# LN Foot
 
 ## Table of Contents
 - [Introduction](#introduction)
@@ -19,11 +17,11 @@ To install the application locally using Yarn, follow these steps:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/ln-sport-update.git
+   git clone https://github.com/hublot-tech/admin-ln-foot.git
    ```
 2. Navigate to the project directory:
    ```bash
-   cd ln-sport-update
+   cd admin-ln-foot
    ```
 3. Install the dependencies:
    ```bash
@@ -59,4 +57,4 @@ Contributions are welcome! Please follow these steps to contribute:
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ## Contact
-For any inquiries, please contact [your-email@example.com](mailto:your-email@example.com). 
+For any inquiries, please contact [your-email@example.com](mailto:hublotscm@gmail.com). 
