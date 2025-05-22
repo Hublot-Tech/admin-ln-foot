@@ -13,6 +13,7 @@ interface UseNewsEditorFormProps {
 }
 
 export function useNewsEditorForm({ article, editor, onFormReset }: UseNewsEditorFormProps) {
+    const [isMajorUpdate, setIsMajorUpdate] = useState(article?.isMajorUpdate ?? false);
     const [title, setTitle] = useState(article?.title ?? "");
     const [excerpt, setExcerpt] = useState(article?.summary ?? "");
     const [featuredImageFile, setFeaturedImageFile] = useState<File | null>(null);
@@ -85,6 +86,7 @@ export function useNewsEditorForm({ article, editor, onFormReset }: UseNewsEdito
                     summary: excerpt,
                     sourceUrl: "lnfoot-cameroon", // Consider making this dynamic if needed
                     content,
+                    isMajorUpdate,
                 },
                 {
                     onError(error) {
@@ -110,6 +112,8 @@ export function useNewsEditorForm({ article, editor, onFormReset }: UseNewsEdito
     return {
         title,
         setTitle,
+        isMajorUpdate,
+        setIsMajorUpdate,
         excerpt,
         setExcerpt,
         featuredImage,
