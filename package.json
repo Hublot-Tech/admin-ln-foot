@@ -73,6 +73,7 @@
     "@types/react-dom": "^19",
     "@typescript-eslint/eslint-plugin": "^8.1.0",
     "@typescript-eslint/parser": "^8.1.0",
+    "autoprefixer": "^10.4.21",
     "daisyui": "^4.12.23",
     "drizzle-kit": "^0.24.0",
     "eslint": "^8.57.0",
