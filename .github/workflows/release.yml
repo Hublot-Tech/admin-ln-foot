@@ -69,4 +69,4 @@ jobs:
             -d "$(jq -nc \  
                   --arg ref "refs/tags/${{ env.VERSION_TAG }}" \  
                   --arg sha "$MAIN_SHA" \  
-                  '{ref: $ref, sha: $sha}')"  
+                  '{ref: $ref, sha: $sha}')"

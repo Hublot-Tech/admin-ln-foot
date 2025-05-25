@@ -29,7 +29,7 @@ COPY --from=builder /app/yarn.lock ./
 COPY --from=builder /app/drizzle.config.ts ./
 COPY --from=builder /app/drizzle ./drizzle
 
-# Install only prod deps + drizzle-kit CLI
-RUN yarn install --prod && yarn add drizzle-kit
+# Install only prod deps
+RUN yarn install --prod
 
-CMD ["sh", "-c", "yarn drizzle-kit push && node server.js"]
+CMD ["node", "server.js"]
