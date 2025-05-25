@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "yarn db:migrate && next dev --turbopack",
-    "build": "next build && drizzle-kit migrate",
+    "build": "next build",
     "start": "next start",
     "lint": "next lint",
     "check": "next lint && tsc --noEmit",
