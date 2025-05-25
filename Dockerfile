@@ -14,6 +14,8 @@ FROM base AS builder
 WORKDIR /app
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
+
+ENV SKIP_ENV_VALIDATION=1
 RUN yarn build
 
 # ---------- Production Runner ----------
